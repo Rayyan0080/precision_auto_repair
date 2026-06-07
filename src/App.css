@@ -1,0 +1,55 @@
+/* Importing readable, professional fonts (No fancy fonts) */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4; /* Secondary light gray */
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #003366; /* Primary dark blue */
+}
+
+/* High Contrast Primary Colors */
+.bg-primary-custom {
+  background-color: #003366 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-custom {
+  background-color: #ff6b00; /* Orange CTA for high visibility */
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding: 10px 24px;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+/* Memory limitations: Highlight active navigation clearly */
+.nav-link.active-link {
+  font-weight: bold;
+  border-bottom: 2px solid #ff6b00;
+  color: #ff6b00 !important;
+}
+
+/* Footer high contrast (Avoided text-muted on dark bg) */
+.footer-text {
+  color: #ffffff; /* Bright white instead of gray */
+}
+
+/* Form error prevention styles */
+.form-text-custom {
+  font-size: 0.85rem;
+  color: #555555;
+}
