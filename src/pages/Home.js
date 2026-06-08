@@ -49,7 +49,9 @@ const Home = () => {
 
       {/* 2. Interactive Services Section */}
       <div className="container py-5 my-3">
-        <h2 className="text-center mb-4 fw-bold">Our Top Services</h2>
+        <h2 className="text-center mb-4 fw-bold" style={{ color: "#003366" }}>
+          Our Top Services
+        </h2>
         <p className="text-center text-muted mb-4">
           Click a service to learn how it's done!
         </p>
@@ -77,7 +79,7 @@ const Home = () => {
               <h5 className="fw-bold" style={{ color: "#ff6b00" }}>
                 {serviceDetails[activeService].name}
               </h5>
-              <p className="mb-0">
+              <p className="mb-0 text-dark">
                 {serviceDetails[activeService].description}
               </p>
             </div>
@@ -86,9 +88,11 @@ const Home = () => {
       </div>
 
       {/* 3. Shop History Section */}
-      <div className="bg-light py-5">
+      <div className="py-5" style={{ backgroundColor: "#ffffff" }}>
         <div className="container text-center">
-          <h2 className="fw-bold mb-4">Our History</h2>
+          <h2 className="fw-bold mb-4" style={{ color: "#003366" }}>
+            Our History
+          </h2>
           <div className="row justify-content-center">
             <div className="col-md-8">
               <p className="lead text-muted">
@@ -102,39 +106,51 @@ const Home = () => {
         </div>
       </div>
 
-      {/* 4. Restored Team Section (Card Layout) */}
-      <div className="container py-5">
-        <h2 className="text-center fw-bold mb-5">Meet Our Team</h2>
-        <div className="row justify-content-center g-4 text-center">
-          <div className="col-md-5">
-            <div className="card shadow-sm border-0 h-100 p-4">
-              <div className="card-body">
-                <div className="display-4 mb-3">👨‍🔧</div>
-                <h4 className="card-title fw-bold text-primary-custom">
-                  John Smith
-                </h4>
-                <h6 className="card-subtitle mb-3 text-muted">Lead Mechanic</h6>
-                <p className="card-text">
-                  Specializes in deep engine diagnostics and complex mechanical
-                  repairs.
-                </p>
+      {/* 4. PERFECTED TEAM SECTION (High Contrast Cards) */}
+      <div className="py-5" style={{ backgroundColor: "#f4f4f4" }}>
+        <div className="container">
+          <h2 className="text-center fw-bold mb-5" style={{ color: "#003366" }}>
+            Meet Our Team
+          </h2>
+          <div className="row justify-content-center g-4 text-center">
+            <div className="col-md-5">
+              <div className="card shadow border p-4 h-100 bg-white">
+                <div className="card-body">
+                  <div className="display-4 mb-3">👨‍🔧</div>
+                  <h4
+                    className="card-title fw-bold"
+                    style={{ color: "#003366" }}
+                  >
+                    John Smith
+                  </h4>
+                  <h6 className="card-subtitle mb-3 text-muted">
+                    Lead Mechanic
+                  </h6>
+                  <p className="card-text text-dark">
+                    Specializes in deep engine diagnostics and complex
+                    mechanical repairs.
+                  </p>
+                </div>
               </div>
             </div>
-          </div>
-          <div className="col-md-5">
-            <div className="card shadow-sm border-0 h-100 p-4">
-              <div className="card-body">
-                <div className="display-4 mb-3">👩‍💼</div>
-                <h4 className="card-title fw-bold text-primary-custom">
-                  Emily Brown
-                </h4>
-                <h6 className="card-subtitle mb-3 text-muted">
-                  Service Advisor
-                </h6>
-                <p className="card-text">
-                  Ensures you understand exactly what your car needs without any
-                  confusing jargon.
-                </p>
+            <div className="col-md-5">
+              <div className="card shadow border p-4 h-100 bg-white">
+                <div className="card-body">
+                  <div className="display-4 mb-3">👩‍💼</div>
+                  <h4
+                    className="card-title fw-bold"
+                    style={{ color: "#003366" }}
+                  >
+                    Emily Brown
+                  </h4>
+                  <h6 className="card-subtitle mb-3 text-muted">
+                    Service Advisor
+                  </h6>
+                  <p className="card-text text-dark">
+                    Ensures you understand exactly what your car needs without
+                    any confusing jargon.
+                  </p>
+                </div>
               </div>
             </div>
           </div>
@@ -142,22 +158,24 @@ const Home = () => {
       </div>
 
       {/* 5. Simple Map & Contact Section */}
-      <div className="bg-light py-5 text-center">
+      <div className="bg-white py-5 text-center">
         <div className="container">
-          <h2 className="fw-bold mb-4">Find Us</h2>
-          <p className="fs-5 mb-1">
+          <h2 className="fw-bold mb-4" style={{ color: "#003366" }}>
+            Find Us
+          </h2>
+          <p className="fs-5 mb-1 text-dark">
             <strong>123 Main Street, Ottawa, ON K1A 0B1</strong>
           </p>
-          <p className="fs-5 mb-4">
+          <p className="fs-5 mb-4 text-dark">
             Call Us: <strong>613-555-1234</strong>
           </p>
 
           <div
-            className="ratio ratio-21x9 shadow-sm rounded overflow-hidden mx-auto"
+            className="ratio ratio-21x9 shadow-sm rounded overflow-hidden mx-auto border"
             style={{ maxWidth: "800px" }}
           >
             <iframe
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d11200.274384999946!2d-75.7056461!3d45.4215296!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x4cce04ff4fe494ef%3A0x26bb54f60c29f6e!2sParliament%20Hill!5e0!3m2!1sen!2sca!4v1700000000000!5m2!1sen!2sca"
+              src="https://maps.google.com/maps?q=Ottawa&t=&z=13&ie=UTF8&iwloc=&output=embed"
               title="Google Map Location"
               allowFullScreen=""
               loading="lazy"
