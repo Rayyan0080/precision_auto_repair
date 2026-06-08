@@ -1,15 +1,15 @@
 {
   "files": {
-    "main.css": "/precision_auto_repair/static/css/main.5518749a.css",
+    "main.css": "/precision_auto_repair/static/css/main.fe77a928.css",
     "main.js": "/precision_auto_repair/static/js/main.9267a00d.js",
     "static/js/453.8f97e954.chunk.js": "/precision_auto_repair/static/js/453.8f97e954.chunk.js",
     "index.html": "/precision_auto_repair/index.html",
-    "main.5518749a.css.map": "/precision_auto_repair/static/css/main.5518749a.css.map",
+    "main.fe77a928.css.map": "/precision_auto_repair/static/css/main.fe77a928.css.map",
     "main.9267a00d.js.map": "/precision_auto_repair/static/js/main.9267a00d.js.map",
     "453.8f97e954.chunk.js.map": "/precision_auto_repair/static/js/453.8f97e954.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.5518749a.css",
+    "static/css/main.fe77a928.css",
     "static/js/main.9267a00d.js"
   ]
 }
