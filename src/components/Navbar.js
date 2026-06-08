@@ -1,13 +1,13 @@
 import React from "react";
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 
 const NavbarComponent = () => {
   return (
-    <nav className="navbar navbar-expand-lg bg-primary-custom navbar-dark py-3">
+    <nav className="navbar navbar-expand-lg bg-primary-custom navbar-dark py-3 shadow-sm">
       <div className="container">
-        <NavLink className="navbar-brand fw-bold" to="/">
+        <Link className="navbar-brand fw-bold fs-4" to="/">
           Precision Auto Repair
-        </NavLink>
+        </Link>
         <button
           className="navbar-toggler"
           type="button"
@@ -17,7 +17,7 @@ const NavbarComponent = () => {
           <span className="navbar-toggler-icon"></span>
         </button>
         <div className="collapse navbar-collapse" id="navbarNav">
-          <ul className="navbar-nav ms-auto">
+          <ul className="navbar-nav ms-auto align-items-center">
             <li className="nav-item mx-2">
               <NavLink
                 to="/"
@@ -39,9 +39,12 @@ const NavbarComponent = () => {
               </NavLink>
             </li>
             <li className="nav-item mx-2">
-              <NavLink to="/book" className="btn btn-primary-custom ms-3">
+              <Link
+                to="/book"
+                className="btn btn-primary-custom ms-lg-3 mt-2 mt-lg-0 fw-bold"
+              >
                 Book Appointment
-              </NavLink>
+              </Link>
             </li>
           </ul>
         </div>
