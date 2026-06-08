@@ -1,48 +1,84 @@
-/* =========================================
-   STORYBOARD 2: MODERN THEME
-   (Dark Gray, Orange, White)
-========================================= */
+/* Importing readable, professional fonts */
+@import url("https://fonts.googleapis.com/css2?family=Poppins:wght@600&family=Roboto:wght@400;500&display=swap");
+
+body {
+  font-family: "Roboto", sans-serif;
+  background-color: #f4f4f4; /* Light Gray */
+  color: #333333;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-family: "Poppins", sans-serif;
+  color: #003366; /* Primary Dark Blue */
+}
+
+/* Primary Theme (Blue & White) */
+.bg-primary-custom {
+  background-color: #003366 !important;
+  color: #ffffff !important;
+}
+
+.btn-primary-custom {
+  background-color: #ff6b00; /* Orange CTA */
+  color: white;
+  border: none;
+  font-weight: 500;
+  padding: 10px 24px;
+}
+
+.btn-primary-custom:hover {
+  background-color: #e65c00;
+  color: white;
+}
+
+/* Navbar Link Visibility Fix */
+.navbar-dark .navbar-nav .nav-link {
+  color: rgba(255, 255, 255, 0.8) !important;
+  font-weight: 500;
+  transition: color 0.3s ease;
+}
+
+.navbar-dark .navbar-nav .nav-link:hover {
+  color: #ff6b00 !important;
+}
+
+.nav-link.active-link {
+  color: #ff6b00 !important;
+  border-bottom: 2px solid #ff6b00;
+}
+
+/* Storyboard 2: Modern Theme (Dark Gray & Orange) */
 .modern-theme {
   background-color: #222222;
   color: #ffffff;
-  padding-bottom: 50px;
+  min-height: 100vh;
 }
 
 .modern-theme h1,
 .modern-theme h2 {
-  color: #ff6b00 !important; /* Orange */
+  color: #ff6b00 !important;
 }
 
-.modern-theme p {
-  color: #e0e0e0;
-}
-
-/* Modern Card Layout */
 .modern-theme .card {
   background-color: #333333;
   border: 1px solid #ff6b00;
+  color: #ffffff;
 }
 
 .modern-theme .card-title {
   color: #ff6b00 !important;
 }
 
-.modern-theme .card-text {
-  color: #ffffff;
-}
-
-/* Modern Buttons */
-.modern-theme .btn-outline-secondary {
-  color: #ffffff;
-  border-color: #ff6b00;
-  background-color: #ff6b00;
-}
-
-.modern-theme .btn-outline-secondary:hover {
-  background-color: #e65c00;
-  border-color: #e65c00;
-}
-
 .modern-theme .text-muted {
   color: #cccccc !important;
+}
+
+/* Footer Fix */
+.footer-text {
+  color: #ffffff;
 }
